@@ -97,8 +97,8 @@ class Student
     end
   end
   
-  def self.create(student)
-    new_student = new(student[:name], student[:grade])
+  def self.create(name, grade)
+    new_student = new(name, grade)
     new_student.save
     new_student
   end
