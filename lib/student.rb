@@ -83,7 +83,7 @@ class Student
   def save
     if @id
       sql = <<-SQL
-        UPDATE students ()
+        UPDATE students SET 
         SQL
     else
       sql = <<-SQL
