@@ -82,6 +82,7 @@ class Student
   
   def save
     if @id
+      
     else
       sql = <<-SQL
         INSERT INTO students (name, grade) 
