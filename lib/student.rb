@@ -93,6 +93,9 @@ class Student
     end
   end
   
+  def update
+  end
+  
   def self.create(name, grade)
     new_student = new(name, grade)
     new_student.save
