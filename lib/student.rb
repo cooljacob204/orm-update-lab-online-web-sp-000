@@ -98,7 +98,6 @@ class Student
         UPDATE students SET name=?, grade=? WHERE id=?
         SQL
     @id = DB[:conn].execute(sql, @name, @grade, @id)
-    self
   end
   
   def self.create(name, grade)
