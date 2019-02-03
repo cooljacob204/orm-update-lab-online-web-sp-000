@@ -97,6 +97,12 @@ class Student
     end
   end
   
+  def self.create(student)
+    new_student = new(student[:name], student[:grade])
+    new_student.save
+    new_student
+  end
+  
   def self.create_table
     sql = <<-SQL
     CREATE TABLE IF NOT EXISTS students (
